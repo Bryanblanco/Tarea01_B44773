@@ -85,7 +85,7 @@ public class ControladorVentanaEstudiantes implements ActionListener{
            //cedula=estudianteM.getJT_Cedula();
            //nombreCompleto=estudianteM.getJT_NombreCompleto();
            //direccion=estudianteM.getJT_Direccion();
-           estudiante=new Estudiante(estudianteM.getJT_Cedula(),estudianteM.getJT_NombreCompleto(),estudianteM.getJT_CorreoPa());
+           estudiante=new Estudiante(estudianteM.getJT_NombreCompleto(),estudianteM.getJT_Direccion(), estudianteM.getJT_Cedula());
            array.AgregarSolicitud(estudiante); 
            JOptionPane.showMessageDialog(null,"Estudiante agregado.");
        }
